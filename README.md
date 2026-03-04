@@ -20,19 +20,46 @@ Skills are reusable prompts and workflows that teach Claude Code how to perform 
 
 ## Installation
 
-To install a skill, copy it to your Claude Code skills directory:
+### Via Claude Code plugin system (recommended)
+
+Add this marketplace, then install any skill with a single command:
+
+```
+/plugin install rust-warning-reduction@claude-skills-marketplace
+/plugin install gdb-debugging@claude-skills-marketplace
+```
+
+Or browse and install interactively:
+
+```
+/plugin > Discover
+```
+
+To register this marketplace with Claude Code:
+
+```
+/plugin add-marketplace https://github.com/yijunyu/claude-skills-marketplace
+```
+
+### Manual installation
 
 ```bash
-# Create skills directory if it doesn't exist
+git clone https://github.com/yijunyu/claude-skills-marketplace /tmp/claude-skills-marketplace
 mkdir -p ~/.claude/skills
 
-# Copy a skill (e.g., gdb-debugging)
-cp -r skills/gdb-debugging ~/.claude/skills/
+# Install a specific skill
+cp -r /tmp/claude-skills-marketplace/skills/rust-warning-reduction ~/.claude/skills/
+cp -r /tmp/claude-skills-marketplace/skills/gdb-debugging ~/.claude/skills/
 ```
 
 ## Usage
 
-Once installed, skills are automatically available to Claude Code. The skill will be triggered based on its description - for example, the `gdb-debugging` skill activates when you ask Claude to "debug", "find root cause", or investigate crashes.
+Once installed, skills activate automatically based on your request:
+
+| Skill | Trigger phrases |
+|---|---|
+| `rust-warning-reduction` | "identify high-frequency warnings", "reduce clippy warnings", "warning density", "warn-identify", "warn-reduce" |
+| `gdb-debugging` | "debug", "diagnose", "find root cause", "why does this crash", "segfault", "panic" |
 
 ## Contributing
 

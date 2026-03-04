@@ -1,0 +1,37 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "claude-skills-marketplace",
+  "description": "A collection of Claude Code skills with specialised workflows and domain expertise for software engineering tasks",
+  "owner": {
+    "name": "Yijun Yu",
+    "url": "https://github.com/yijunyu"
+  },
+  "plugins": [
+    {
+      "name": "rust-warning-reduction",
+      "description": "Identify and iteratively eliminate high-frequency Clippy warnings using the Li et al. (arXiv:2310.11738) Pareto-based methodology. Provides warn-identify (ranked warning distribution) and warn-reduce (iterative elimination loop that stops at 18/KLOC).",
+      "version": "1.0.0",
+      "author": {
+        "name": "Yijun Yu",
+        "url": "https://github.com/yijunyu"
+      },
+      "source": "./skills/rust-warning-reduction",
+      "category": "development",
+      "homepage": "https://github.com/yijunyu/claude-skills-marketplace/tree/main/skills/rust-warning-reduction",
+      "tags": ["rust", "clippy", "warnings", "code-quality", "linting"]
+    },
+    {
+      "name": "gdb-debugging",
+      "description": "Debug compiled programs (Rust, C, C++) using GDB instead of print statements. Observe-first approach: inspect call stack, variables, and execution flow without modifying code.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Yijun Yu",
+        "url": "https://github.com/yijunyu"
+      },
+      "source": "./skills/gdb-debugging",
+      "category": "development",
+      "homepage": "https://github.com/yijunyu/claude-skills-marketplace/tree/main/skills/gdb-debugging",
+      "tags": ["rust", "c", "cpp", "debugging", "gdb"]
+    }
+  ]
+}

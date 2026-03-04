@@ -1,0 +1,13 @@
+{
+  "name": "gdb-debugging",
+  "description": "Debug compiled programs (Rust, C, C++) using GDB instead of print statements. Observe-first approach: inspect call stack, variables, and execution flow without modifying code.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Yijun Yu",
+    "url": "https://github.com/yijunyu"
+  },
+  "homepage": "https://github.com/yijunyu/claude-skills-marketplace/tree/main/skills/gdb-debugging",
+  "repository": "https://github.com/yijunyu/claude-skills-marketplace",
+  "license": "MIT",
+  "keywords": ["rust", "c", "cpp", "debugging", "gdb", "segfault", "crash"]
+}
