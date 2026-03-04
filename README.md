@@ -16,6 +16,7 @@ Skills are reusable prompts and workflows that teach Claude Code how to perform 
 | Skill | Description | Status |
 |-------|-------------|--------|
 | [gdb-debugging](skills/gdb-debugging/) | Debug compiled programs (Rust, C, C++) using GDB instead of print statements | Stable |
+| [rust-warning-reduction](skills/rust-warning-reduction/) | Identify and iteratively eliminate high-frequency Clippy warnings using the Li et al. (arXiv:2310.11738) methodology; stops at 18/KLOC and asks whether to continue | Stable |
 
 ## Installation
 
