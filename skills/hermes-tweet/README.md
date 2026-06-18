@@ -5,7 +5,13 @@ Native Hermes Agent X/Twitter workflows for research, reading, monitoring, and c
 ## Install
 
 ```bash
-pip install git+https://github.com/Xquik-dev/hermes-tweet.git
+hermes plugins install Xquik-dev/hermes-tweet --enable
+```
+
+If it is already installed in the Hermes environment, enable it explicitly:
+
+```bash
+hermes plugins enable hermes-tweet
 ```
 
 Set the required read API key:
