@@ -17,6 +17,7 @@ Skills are reusable prompts and workflows that teach Claude Code how to perform 
 |-------|-------------|--------|
 | [gdb-debugging](skills/gdb-debugging/) | Debug compiled programs (Rust, C, C++) using GDB instead of print statements | Stable |
 | [rust-warning-reduction](skills/rust-warning-reduction/) | Identify and iteratively eliminate high-frequency Clippy warnings using the Li et al. (arXiv:2310.11738) methodology; stops at 18/KLOC and asks whether to continue | Stable |
+| [hermes-tweet](skills/hermes-tweet/) | Native Hermes Agent X/Twitter research, reading, monitoring, and opt-in posting workflows | Stable |
 
 ## Installation
 
@@ -50,6 +51,7 @@ mkdir -p ~/.claude/skills
 # Install a specific skill
 cp -r /tmp/claude-skills-marketplace/skills/rust-warning-reduction ~/.claude/skills/
 cp -r /tmp/claude-skills-marketplace/skills/gdb-debugging ~/.claude/skills/
+cp -r /tmp/claude-skills-marketplace/skills/hermes-tweet ~/.claude/skills/
 ```
 
 ## Usage
@@ -60,6 +62,7 @@ Once installed, skills activate automatically based on your request:
 |---|---|
 | `rust-warning-reduction` | "identify high-frequency warnings", "reduce clippy warnings", "warning density", "warn-identify", "warn-reduce" |
 | `gdb-debugging` | "debug", "diagnose", "find root cause", "why does this crash", "segfault", "panic" |
+| `hermes-tweet` | "Hermes Tweet", "X/Twitter research", "tweet search", "social monitoring", "controlled posting" |
 
 ## Contributing
 
