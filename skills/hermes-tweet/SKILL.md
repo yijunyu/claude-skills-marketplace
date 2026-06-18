@@ -18,10 +18,16 @@ Hermes Tweet is a native Hermes Agent plugin for X/Twitter workflows. It support
 
 ## Setup
 
-Install Hermes Tweet from its source repository:
+Install and enable Hermes Tweet with the Hermes plugin manager:
 
 ```bash
-pip install git+https://github.com/Xquik-dev/hermes-tweet.git
+hermes plugins install Xquik-dev/hermes-tweet --enable
+```
+
+If you already installed the package into the Hermes environment, enable it explicitly:
+
+```bash
+hermes plugins enable hermes-tweet
 ```
 
 Configure the required API key for read workflows:
